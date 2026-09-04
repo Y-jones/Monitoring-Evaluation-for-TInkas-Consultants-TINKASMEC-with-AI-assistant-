@@ -7,4 +7,4 @@
 //   window.TINKASMEC_API_BASE = 'https://tinkasmec-backend.onrender.com';
 // Both the chat widget and the contact form read from this one value.
 
-window.TINKASMEC_API_BASE = 'http://localhost:3000';
+window.TINKASMEC_API_BASE = 'https://tinkasmec.onrender.com';
