@@ -2,7 +2,7 @@
   // ---- CONFIGURE THIS ----
   // Point this at your deployed backend's /api/chat endpoint.
   // See server/README.md for how to deploy the backend.
-  var CHAT_API_URL = 'http://localhost:3000/api/chat';
+  var CHAT_API_URL = 'https://tinkas-web.onrender.com/api/chat';
   // -------------------------
 
   var GREETING = "Hi! I'm the TinkasMec assistant. Ask me about M&E concepts and best practices, our M&E and Data & AI services, or how to reach the team.";
@@ -121,7 +121,6 @@
     closeList();
     return html;
   }
-
   document.addEventListener('DOMContentLoaded', function () {
     var history = []; // {role, content}
     var sending = false;
@@ -146,7 +145,7 @@
     var input = el('textarea', { class: 'chat-input', rows: '1', placeholder: 'Ask a question…' });
     var sendBtn = el('button', { class: 'chat-send', 'aria-label': 'Send' , html: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>'});
 
-    var logoSrc = 'logo.png';
+    var logoSrc = 'assets/logo.png';
     var panel = el('div', { class: 'chat-panel' }, [
       el('div', { class: 'chat-header' }, [
         el('img', { src: logoSrc, alt: 'TinkasMec' }),
