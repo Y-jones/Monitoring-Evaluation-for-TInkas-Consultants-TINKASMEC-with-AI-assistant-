@@ -2,7 +2,7 @@
   // ---- CONFIGURE THIS ----
   // Point this at your deployed backend's /api/chat endpoint.
   // See server/README.md for how to deploy the backend.
-  var CHAT_API_URL = 'https://tinkas-web.onrender.com/api/chat';
+  var CHAT_API_URL = (window.TINKASMEC_API_BASE || 'http://localhost:3000') + '/api/chat';
   // -------------------------
 
   var GREETING = "Hi! I'm the TinkasMec assistant. Ask me about M&E concepts and best practices, our M&E and Data & AI services, or how to reach the team.";
